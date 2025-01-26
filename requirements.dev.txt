@@ -1,0 +1,2 @@
+flake8>=3.9.2,<3.10
+# The difference is that the dev requirements file includes flake8, which is a linter that checks for PEP8 compliance.

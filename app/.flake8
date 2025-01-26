@@ -1,0 +1,8 @@
+[flake8]
+exclude = 
+    # exclude migrations, settings, wsgi, asgi and __init__ files
+    */migrations/*,
+    */settings.py,
+    */__init__.py,
+    */__pycache__/*,
+    manage.py,
