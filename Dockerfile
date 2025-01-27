@@ -14,6 +14,10 @@ RUN python -m venv /py && \
 COPY requirements.txt /tmp/requirements.txt
 COPY requirements.dev.txt /tmp/requirements.dev.txt
 
+RUN apk add --update --no-cache postgresql-client && \
+    apk add --update --no-cache --virtual .tmp-build-deps \
+        build-base postgresql-dev musl-dev
+
 # Set the environment variable
 ARG DEV=false
 
